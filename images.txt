@@ -1,0 +1,6 @@
+#Lines beginning with # are comments.
+# Next string is template:
+# Link Name_of_Picture Quality_depth(1,2,3)
+timeout 50 sec
+http://www.googleartproject.com/collection/moma-the-museum-of-modern-art/artwork/the-starry-night-vincent-van-gogh/320268/ Starry-Night-Van-Gogh.jpg 4
+http://www.googleartproject.com/collection/scad-museum-of-art/artwork/event-horizon-adam-cvijanovic/409087/ Event_hoizont.Adam_Cvijanovic.jpg 4

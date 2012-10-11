@@ -1,0 +1,35 @@
+For PC-user:
+1. install Python 2.7 (BE carefull: 2.7, not 3.0 and later)
+http://www.python.org/download/
+
+2. open directory with script
+
+3. paste links of pictures to file images.txt
+
+4. run extractionGoogleArtProject_Win
+
+5. Picture will be downloaded into ./images
+
+
+
+
+For Mac user:
+1. install Python 2.7 (BE carefull: 2.7, not 3.0 and later)
+http://www.python.org/download/
+
+2. install imagemagick
+http://www.imagemagick.org/script/binary-releases.php#macosx
+
+3. open directory with script
+
+4. paste links of pictures to file images.txt
+
+5. run extractionGoogleArtProject_Unix
+
+6. Picture will be downloaded into ./images
+
+For linux-user
+1 install python2.7, imagemagick. 
+2 Paste links of pictures to file images.txt
+3 run extractionGoogleArtProject_Unix
+4 ./images
