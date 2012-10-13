@@ -31,7 +31,7 @@ def getContenuUrl(url, referer = ""):
     
     return urllib2.urlopen(requete).read()
 
-### URL d'un fragment d'image, décryptage d'un fragment d'image
+### URL d'un fragment d'image, dï¿½cryptage d'un fragment d'image
 
 
 
@@ -97,7 +97,7 @@ def getInfosTableau(urlPageTableau):
     
     return infosTableau
 
-### téléchargements des fragments d'image
+### tï¿½lï¿½chargements des fragments d'image
 
 def getInfosFragments(urlImage, zoom):
     docXml = minidom.parse(urllib2.urlopen(urlImage + "=g"))
@@ -137,7 +137,7 @@ def telechargerTousFragments(urlImage, xMax, yMax, zoom):
             
             telechargerFragment(urlImage, cheminFragment, x, y, zoom)
 
-### reconstitution de l'image à partir des fragments
+### reconstitution de l'image ï¿½ partir des fragments
 
 def reconstituerImage(nomFichierImage, xMax, yMax, largeurFragment, hauteurFragment):
     commandeAssembler = (os.path.join(cheminDossierImageMagick, "montage.exe")
@@ -174,7 +174,7 @@ def getUrlPagesTableaux(idPeintre):
 
     return listeUrlPagesTableaux
 
-### normalisation d'un chaîne de caractères
+### normalisation d'un chaï¿½ne de caractï¿½res
 
 def normaliserChaine(chaine):
     # encodage UTF-8
@@ -194,12 +194,12 @@ def normaliserChaine(chaine):
 def normaliserNomFichier(chaine):
     chaine = normaliserChaine(chaine)
     
-    # caractère non alpha-numérique => "_"
+    # caractï¿½re non alpha-numï¿½rique => "_"
     chaine = re.sub("[^0-9a-zA-Z\.\-]", "_", chaine)
 
     return chaine
 
-### téléchargement des images et infos
+### tï¿½lï¿½chargement des images et infos
 
 def nettoyerDossier(cheminDossier):
     for nomFichier in os.listdir(cheminDossier):
@@ -267,7 +267,8 @@ def telechargerArtiste(urlArtiste, zoom):
     
     telechargerTableauxPeintre(nomArtiste, idArtiste, zoom)
 
-### exécution du script
+### exï¿½cution du script
+'''
 timeout=20
 a=[]
 with open("images.txt","r") as f:
@@ -296,7 +297,7 @@ for i in jjj:
 
 
 
-
+'''
 
 
 
